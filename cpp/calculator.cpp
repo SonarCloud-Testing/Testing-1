@@ -13,6 +13,14 @@ int multiply(int a, int b) {
     return a * b;
 }
 
+int divide(int a, int b) {
+    if (b == 0) {
+        cout << "Cannot divide by zero!" << endl;
+        return 0;
+    }
+    return a / b;
+}
+
 int main() {
     int num1, num2;
     cout << "Enter two numbers: ";
@@ -21,9 +29,7 @@ int main() {
     cout << "Addition: " << add(num1, num2) << endl;
     cout << "Subtraction: " << subtract(num1, num2) << endl;
     cout << "Multiplication: " << multiply(num1, num2) << endl;
-    
-  
     cout << "Division: " << divide(num1, num2) << endl;
-    
+
     return 0;
 }
