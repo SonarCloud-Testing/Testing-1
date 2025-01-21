@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string_view>
 using namespace std;
 
 class TemperatureConverter {
@@ -11,7 +12,7 @@ public:
         return (celsius * 9/5) + 32;
     }
 
-    static double convertTemperature(double temp, const string& unit) {
+    static double convertTemperature(double temp, std::string_view unit) {
         if (unit == "C") {
             return toFahrenheit(temp);
         } else if (unit == "F") {
