@@ -1,12 +1,13 @@
 #include <iostream>
+#include <array>
 using namespace std;
 
 int main() {
-    int grades[5];
+    array<int, 5> grades;
     cout << "Enter grades for 5 students: ";
     
     // Loop to take grades input
-    for (int i = 0; i <= 5; ++i) { // Array index out of bounds error
+    for (int i = 0; i < 5; ++i) {
         cin >> grades[i];
     }
     
