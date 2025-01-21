@@ -11,7 +11,7 @@ public:
         return (celsius * 9/5) + 32;
     }
 
-    static double convertTemperature(double temp, string unit) {
+    static double convertTemperature(double temp, const string& unit) {
         if (unit == "C") {
             return toFahrenheit(temp);
         } else if (unit == "F") {
